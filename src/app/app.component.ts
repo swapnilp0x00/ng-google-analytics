@@ -11,6 +11,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     console.log(ga);
     ga('create', 'UA-174052756-1', 'auto');
+    ga('require', 'urlChangeTracker');
     ga('send', 'pageview');
   }
 }
