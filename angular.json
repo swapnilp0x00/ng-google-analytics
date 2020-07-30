@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "crownstack": {
+    "ng-google-analytics": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/crownstack",
+            "outputPath": "dist/ng-google-analytics",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "crownstack:build"
+            "browserTarget": "ng-google-analytics:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "crownstack:build:production"
+              "browserTarget": "ng-google-analytics:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "crownstack:build"
+            "browserTarget": "ng-google-analytics:build"
           }
         },
         "test": {
@@ -116,16 +116,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "crownstack:serve"
+            "devServerTarget": "ng-google-analytics:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "crownstack:serve:production"
+              "devServerTarget": "ng-google-analytics:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "crownstack"
+  "defaultProject": "ng-google-analytics"
 }

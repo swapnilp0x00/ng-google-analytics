@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('crownstack app is running!');
+    expect(page.getTitleText()).toEqual('ng-google-analytics app is running!');
   });
 
   afterEach(async () => {
